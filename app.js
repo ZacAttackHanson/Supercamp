@@ -19,7 +19,7 @@ var commentRoutes    = require("./routes/comments"),
     indexRoutes      = require("./routes/index")
     
 //----------------------------------------------------------
-mongoose.connect("mongodb://<z>:<password1>@ds141613.mlab.com:41613/supercamp");
+mongoose.connect("mongodb://z:password1@ds141613.mlab.com:41613/supercamp");
 //mongodb://<z>:<password1>@ds141613.mlab.com:41613/supercamp
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
